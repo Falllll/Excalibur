@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/user/register', function () {
+    return view('login_user/register_user/register');
+});
+
+Route::get('/user/login', function () {
+    return view('login_user/login');
+});
+
 Route::get('/admin', function () {
     return view('admin/dashboard');
 });
